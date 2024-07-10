@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="author" content="Jack Lu">
+        <link rel="stylesheet" href="https://jack4215.github.io/article/css/003.css" />
+        <title>過往夢湯傳閱本掃描檔</title>  
+    </head>
+    <script src="https://jacklu15.github.io/ticket/js/001.js"></script>
+    <script>
+        function showBarCode() {
+        let githubURL = new URL(location.href);
+        let params = githubURL.searchParams;
+        var code = params.get('id');
+
+        JsBarcode("#H1", code, {
+            width: 2.2,
+            height: 65,
+            fontSize: 14,
+            background: "#FFFFFF",
+        });
+    }
+    </script>
+    <style>
+    #background {
+        background-image: url('https://jacklu15.github.io/ticket/photo/dreammall.jpg') !important;
+    }
+    </style>
+
+    <body>
+        <div id="background"></div>
+        <main id="container">
+            <section id="info">
+                <h1 class="department-name">
+                    <svg id="H1"></svg>
+                </h1>
+            </section>
+           
+        </main>
+    </body>
+</html>
